@@ -1,0 +1,123 @@
+html,
+body {
+  height: 50vh;
+  margin: vh;
+  padding: 0;
+  max-width: 100%;
+}
+
+
+.colNavbar {
+    background-color: blue;
+}
+
+.barraTop
+{
+    background-color: aquamarine;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.colWhatsapp {
+    display: flex;
+    font: bold;
+    text-align: right;
+    padding-right: 3%;  
+    align-items: center;
+}
+
+.botonVerdeWhatsapp {
+    background-color: #198754;
+}
+
+.ajusteCard {
+    padding-left: 4.2%;
+}
+
+.cajaPromesas {
+    text-align: center;
+    align-items: center;
+}
+
+.tituloBlog {
+    margin-top: 4%;
+}
+
+#carouselExampleAutoplaying {
+    padding-left: 10.5%;
+    padding-right: 8%;
+}
+
+.textoCobertura {
+    height: 22%;
+    text-align: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+/* Secciones del mapa custom de Google */
+#mapDivToBeCentered {
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+}
+
+#map {
+    height: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* Footer */
+
+.barraFooter {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.formPaddingTest {
+    padding-left: 10%;
+    padding-right: 29%;
+    padding-top:5%;
+    padding-bottom:5%
+}
+
+.botonContactar {
+    text-align: center;
+    margin-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.ajusteMarginForm {
+    margin:1%;
+}
+
+.ajusteFooterAlFondo {
+    position: fixed;
+    bottom: 0;
+}
+
+#logoContacto {
+    text-align: center;
+    align-items: center;
+}
+
+/* MediaQueries */
+
+@media (max-width: 480px) {
+    .colFotoLogo {
+        padding: 10%;
+    }
+
+    .carouselExampleAutoplaying {
+        margin: 10%;
+    }
+}

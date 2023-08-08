@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Médicos a la antigua</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <header class="barraTop">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+            <!-- Logo del menu principal -->
+              <div class="colFotoLogo col-1">
+                  <img src="../assets/img/MedievalMedic.png" alt="Logo Médicos a la antigua" class="logoImagen"
+                  width="100%" 
+                  height="100%"
+                  />
+              </div>
+            <!-- Navbar del menu principal -->
+              <nav class="navbar navbar-expand-lg bg-body-tertiary col-9">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">Médicos a la antigua</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/cobertura.html">Cobertura</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="..pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            <!-- Contacto Whatsapp-->
+            <div class="colWhatsapp col-2">
+              <button type="button" class=" btn btn-primary .btn-lg botonVerdeWhatsapp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                </svg>
+                +569 81234567
+              </button>
+    </header>
+
+<!-- Imagen de contacto -->
+  
+  <div id="logoContacto">
+    <img src="../assets/img/contacto.png" alt="Telefono"
+    width="7.5%"    
+    height="7.5%"
+    />
+  </div>
+
+<!-- Forms de contacto, nombre -->
+
+  <form action="formplaceholder.php" method="POST" enctype="text/plain" class="formPaddingTest">
+    <div class="mb-3">
+        <label for="nombre" class="form-label"> Nombre:</label>
+        <input type="nombre" name="Nombre de ejemplo" id="nombre" class="form-control" placeholder="Nombre Apellido" required>
+    </div>
+<!-- Lista de servicios disponibles  --> 
+    <div>
+        Servicio solicitado: 
+        <select class="form-select form-select mb-3" aria-label="select example" name="" id="prestacion" required>
+            <option value="Medicina">Consulta de medicina general</option>
+            <option value="Cronicas">Consulta de enfermedades crónicas</option>
+            <option value="Certificados">Certificados médicos</option>
+            <option value="Enfermeria">Servicios de enfermería</option>
+            <option value="Inyecciones">Servicio de Inyecciones</option>
+            <option value="Empresas">Servicios a empresas</option>
+            <option value="Empresas">Otros</option>
+        </select>
+    </div>
+<!-- Sigue el formulario -->
+    <div>
+        <label for="telefono" class="form-label"> Número telefónico:</label>
+        <input type="telefono" class="form-control" name="Nombre de ejemplo" id="telefono" placeholder="+569 12345678" required>
+    </div>
+    <div> 
+        <label for="email" class="form-label">Correo electrónico (opcional):</label>
+        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com"/>
+    </div>
+    <div class="form-check ajusteMarginForm">
+        ¿Desea ser contactado/a por vía telefónica?   
+        <label for="contactable" class="form-check-label">Sí</label>
+        <input type="radio" name="contactable" id="contactable" checked>
+        <label for="contactable" class="form-check-label">No</label>
+        <input type="radio" name="contactable" id="contactable">
+    </div>
+    <div class="input-group">
+      <span class="input-group-text">Comentarios</span>
+      <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Contactar" class="botonContactar"/> 
+    </div>
+    </form>
+
+  <!-- Footer -->
+
+  <footer class="barraFooter ajusteFooterAlFondo">
+    <a href="http://www.facebook.com">
+    <img src="../assets/img/facebook-icon.png" alt="Logo Facebook"
+    width="2.5%"    
+    height="2.5%"
+    />
+
+    <a href="http://www.twitter.com">
+    <img src="../assets/img/twitter-icon.png" alt="Logo Twitter"
+    width="2.5%"    
+    height="2.5%"
+    />
+
+    <a href="mailto:nathaniel@ibco.cl">
+    <img src="../assets/img/email-icon.png" alt="Logo Email"
+    width="2.5%"    
+    height="2.5%"
+    />
+</footer>
+
+  <!-- Script bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>    
+</body>
+</html>
