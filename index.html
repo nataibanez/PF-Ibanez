@@ -19,7 +19,7 @@
                   />
               </div>
             <!-- Navbar del menu principal -->
-              <nav class="navbar navbar-expand-lg bg-body-tertiary col-8">
+              <nav class="navbar navbar-expand-lg bg-body-tertiary col-6">
                 <div class="container-fluid">
                   <a class="textoTitulo navbar-brand" href="./index.html">Médicos a la antigua</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,13 +53,13 @@
               </svg>
               +569 81234567 
             </a>
-
     </header>
 
+<main>
     <!-- div de Carousel y blog -->
     <div class="row g-0">
       <!-- Carousel de promesas -->
-      <div id="carouselExampleAutoplaying" class="carousel slide col-12 col-md-8 ajusteCarousel" data-bs-ride="carousel">
+      <div id="carouselExampleAutoplaying" class="carousel slide col-9 col-md-7 classCarousel" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -88,83 +88,90 @@
       
       <!-- Blog, aparece en pantalla grande y desaparece en las pequeñas -->
       
-      <div class="col-4 ajusteCard blogHidingOnSmallScreen">
-        <h2 class="tituloBlog">Blog</h2>
-          <div class="card" style="width: 25rem">
-            <img src="./assets/img/Espresso.jpg" class="card-img-top" alt="Café espresso">
+        <div class="col-2 cardsBlog cardBlogIzquierda">
+          <div class="card cardsProperties">
+              <img src="./assets/img/Espresso.jpg" class="card-img-top" alt="Café espresso">
+              <div class="card-body">
+                  <h5 class="card-title">Cafeína</h5>
+                  <p class="card-text">¿Qué es la cafeína? ¿Cuáles son sus efectos en la salud?</p>
+              <a href="./pages/blog.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 cardsBlog">
+          <div class="card cardsProperties">
+          <img src="./assets/img/Espresso.jpg" class="card-img-top" alt="Café espresso">
             <div class="card-body">
               <h5 class="card-title">Cafeína</h5>
-              <p class="card-text">¿Qué es la cafeína? ¿Cuáles son sus efectos en la salud?</p>
-              <a href="./pages/blog.html" class="stretched-link"></a>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
           </div>
-          </div>
-      </div>
-    </div>
+        </div>  
 
     <!-- Separador, texto de cobertura -->
 
-    <div class="textoCobertura">
-      <h1>Conoce nuestra cobertura </h1>
-      <p>Si tienes dudas, no dudes en contactarnos</p>
+    <div>
+      <h2 class="textoCobertura">Conoce nuestra cobertura</h2>
+      <p class="textoSubCobertura">Si tienes dudas, te respondemos de inmediato</p>
     </div>
     
+<!-- Mapa de cobertura, contiene código de API -->
 
-    <!-- Mapa de cobertura, contiene código de API -->
-    <div id="map" id="containerForAll" class="scriptMapaCobertura"></div>
-      <div id="mapDivToBeCentered">
-        <script
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bM6Kn2A7aAFsYA7VyBC1j3Ju6nolfEk&callback=initMap&v=weekly"
-          defer
-          >
-        </script>
-        <!DOCTYPE html>
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        
-        <script>
-          /**
-           * @license
-           * Copyright 2019 Google LLC. All Rights Reserved.
-           * SPDX-License-Identifier: Apache-2.0
-           */
-          // This example creates a simple polygon representing the Bermuda Triangle.
-          function initMap() {
-            const map = new google.maps.Map(document.getElementById("map"), {
-              zoom: 11,
-              center: { lat: -33.436933, lng: -70.6370096 },
-              mapTypeId: "roadmap",
-            });
-            // Define the LatLng coordinates for the polygon's path.
-            // Nata: Coordenadas del polígono de área de atención
-            const triangleCoords = [
-              { lat: -33.4194082, lng: -70.6748793 },  // Facultad medicina UChile
-              { lat: -33.4132472, lng: -70.6152619 },   // Jardín Japonés Pedro de Valdivia Norte
-              { lat: -33.3816693, lng: -70.5817528 },   // Centro Gastronómico BordeRío   
-              { lat: -33.3193526, lng: -70.5777986 },   // Craighouse School
-              { lat: -33.308667, lng: -70.535778 },   // Estero las Gualtatas
-              { lat: -33.316578, lng: -70.5170559 },   // Centro hipoterapia CRIN
-              { lat: -33.341475, lng: -70.4850496 },   // Esquinita de La Dehesa         
-              { lat: -33.3991635, lng: -70.493525 },   // Centro de eventos San Carlos de Apoquindo
-              { lat: -33.46418, lng: -70.5180007 },   // Club Peñalolen
-              { lat: -33.4560843, lng: -70.5962902 },   // Plaza Ñuñoa    
-              { lat: -33.456225, lng: -70.652022 },   // Teatro Caupolicán
-            ];
-            // Construct the polygon.
-            const areaAtencion = new google.maps.Polygon({
-              paths: triangleCoords,
-              strokeColor: "#FF0000",
-              strokeOpacity: 0.8,
-              strokeWeight: 2,
-              fillColor: "#FF0000",
-              fillOpacity: 0.35,
-            });
-
-            areaAtencion.setMap(map);
-          }
-
-          window.initMap = initMap;
-        </script>
-      </div>
+<div class="row">
+<div id="map" id="containerForAll" class="scriptMapaCobertura"></div>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bM6Kn2A7aAFsYA7VyBC1j3Ju6nolfEk&callback=initMap&v=weekly"
+    defer
+    >
+  </script>
+  <!DOCTYPE html>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   
+  <script>
+    /**
+     * @license
+     * Copyright 2019 Google LLC. All Rights Reserved.
+     * SPDX-License-Identifier: Apache-2.0
+     */
+    // This example creates a simple polygon representing the Bermuda Triangle.
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 11,
+        center: { lat: -33.436933, lng: -70.6370096 },
+        mapTypeId: "roadmap",
+      });
+      // Define the LatLng coordinates for the polygon's path.
+      // Nata: Coordenadas del polígono de área de atención
+      const triangleCoords = [
+        { lat: -33.4194082, lng: -70.6748793 },  // Facultad medicina UChile
+        { lat: -33.4132472, lng: -70.6152619 },   // Jardín Japonés Pedro de Valdivia Norte
+        { lat: -33.3816693, lng: -70.5817528 },   // Centro Gastronómico BordeRío   
+        { lat: -33.3193526, lng: -70.5777986 },   // Craighouse School
+        { lat: -33.308667, lng: -70.535778 },   // Estero las Gualtatas
+        { lat: -33.316578, lng: -70.5170559 },   // Centro hipoterapia CRIN
+        { lat: -33.341475, lng: -70.4850496 },   // Esquinita de La Dehesa         
+        { lat: -33.3991635, lng: -70.493525 },   // Centro de eventos San Carlos de Apoquindo
+        { lat: -33.46418, lng: -70.5180007 },   // Club Peñalolen
+        { lat: -33.4560843, lng: -70.5962902 },   // Plaza Ñuñoa    
+        { lat: -33.456225, lng: -70.652022 },   // Teatro Caupolicán
+      ];
+      // Construct the polygon.
+      const areaAtencion = new google.maps.Polygon({
+        paths: triangleCoords,
+        strokeColor: "#FF0000",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#FF0000",
+        fillOpacity: 0.35,
+      });
+
+      areaAtencion.setMap(map);
+    }
+
+    window.initMap = initMap;
+  </script>
+</div>
   <!-- Blog, aparece en pantallas pequeñas y desaparece en las pequeñas -->
 
   <div class="col-4 ajusteCard blogHidingOnBigScreen smallBlogCardProperties">
@@ -178,10 +185,15 @@
       </div>
       </div>
   </div>
+</main>
 
   <!-- Footer -->
 
-  <footer class="barraFooter">
+<footer>
+  <div class="barraFooterSuperior">
+  Copyright© 2023 - Nathaniel Ibáñez
+  </div>
+  <div class="barraFooterInferior">
     <a href="http://www.facebook.com">
     <img src="./assets/img/facebook-icon.png" alt="Logo Facebook" class="footerResponsive"
     width="2.5%"    
@@ -199,9 +211,10 @@
     width="2.5%"    
     height="2.5%"
     />
+  </div>
 </footer>
 
   <!-- Script bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

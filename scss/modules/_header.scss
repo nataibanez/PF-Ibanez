@@ -1,0 +1,42 @@
+header {
+    nav {
+        li {
+            font-size: $fontsize-secondary;
+            font-family: $font-main;
+            margin-top: 1%;     
+        }
+    }
+    background-color: $color-secondary;
+    border-bottom: black solid 10px;
+
+    .colFotoLogo {
+        margin-left:5%;
+    }
+
+    .textoTitulo{
+        font-size: $fontsize-main;
+        font-family: $font-main;
+        font-weight: bold;    
+    }
+    
+    .navbar {
+        background-color: $color-secondary !important;
+        margin-left: 3%;
+        align-items: center;
+    }
+    .botonVerdeWhatsapp {
+        background-color: #198754;
+        border: solid black 3px;
+        font-size: 2rem;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+        margin-left: 8%;
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 20%;
+    }
+
+    .logoWhatsapp {
+        vertical-align: -5%;
+    }
+}
