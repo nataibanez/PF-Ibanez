@@ -1,0 +1,47 @@
+.logoContacto {
+    align-items: center;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.tituloSuperiorContacto {
+    height: 22%;
+    text-align: center;
+    align-items: center;
+    font-family: $font-main;
+    padding-top: 1%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.ajusteForm {
+    margin-left: 13%;
+    margin-right: 13%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+}
+
+.ajusteContactar {
+    align-items: center;
+    text-align: center;
+    padding-top:2%
+}
+
+.botonContactar {
+    padding-left:5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 1%;
+    border-radius: .3rem !important;
+    font-size: 2rem;
+    background-color: #198754;
+    font-family: $font-main;
+    font-weight: bold;
+    border: black solid 3px;
+    color: white;
+}
+
+.botonContactar:hover {
+    background-color: #146f45;
+}

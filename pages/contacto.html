@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Médicos a la antigua</title>
+    <title>Médicos a la antigua - Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     
   <header class="barraTop">
-    <div class="container-fluid justify-content-center ">
+    <div class="container-fluid">
         <div class="row">
         <!-- Logo del menu principal -->
           <div class="colFotoLogo col-2 col-md-1 ">
@@ -20,7 +20,7 @@
               />
           </div>
         <!-- Navbar del menu principal -->
-          <nav class="navbar navbar-expand-lg bg-body-tertiary col-8">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary col-6">
             <div class="container-fluid">
               <a class="textoTitulo navbar-brand" href="../index.html">Médicos a la antigua</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,19 +29,19 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link active textonavbar" href="../index.html" aria-current="page" >Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/cobertura.html">Cobertura</a>
+                    <a class="nav-link textonavbar"  href="../pages/cobertura.html">Cobertura</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    <a class="nav-link textonavbar" href="../pages/nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/blog.html">Blog</a>
+                    <a class="nav-link textonavbar" href="../pages/blog.html">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    <a class="nav-link textonavbar" href="../pages/contacto.html">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -54,21 +54,26 @@
           </svg>
           +569 81234567 
         </a>
-
 </header>
 
+<main>
 <!-- Imagen de contacto -->
   
-  <div id="logoContacto">
+  <div class="logoContacto">
     <img src="../assets/img/contacto.png" alt="Telefono"
     width="7.5%"    
     height="7.5%"
     />
   </div>
+<!-- Texto título de Blog -->
+
+  <h2 class="tituloSuperiorContacto">Contacto</h2>
+  <p class="textoSubCobertura">Si quieres solicitar una consulta médica a domicilio, sugerimos usar el botón WhatsApp</p>
+
 
 <!-- Forms de contacto, nombre -->
 
-  <form action="formplaceholder.php" method="POST" enctype="text/plain" class="formPaddingTest">
+  <form action="formplaceholder.php" method="POST" enctype="text/plain" class="ajusteForm">
     <div class="mb-3">
         <label for="nombre" class="form-label"> Nombre:</label>
         <input type="nombre" name="Nombre de ejemplo" id="nombre" class="form-control" placeholder="Nombre Apellido" required>
@@ -108,32 +113,37 @@
       <span class="input-group-text">Comentarios</span>
       <textarea class="form-control" aria-label="With textarea"></textarea>
     </div>
-    <div>
-        <input type="submit" value="Contactar" class="botonContactar"/> 
+    <div class="ajusteContactar">
+        <input class="botonContactar" type="submit" value="Contactar"/> 
     </div>
     </form>
-
+  </main>
   <!-- Footer -->
 
-  <footer class="barraFooter ajusteFooterAlFondo">
-    <a href="http://www.facebook.com">
-    <img src="../assets/img/facebook-icon.png" alt="Logo Facebook" class="footerResponsive"
-    width="2.5%"    
-    height="2.5%"
-    />
-
-    <a href="http://www.twitter.com">
-    <img src="../assets/img/twitter-icon.png" alt="Logo Twitter" class="footerResponsive"
-    width="2.5%"    
-    height="2.5%"
-    />
-
-    <a href="mailto:nathaniel@ibco.cl">
-    <img src="../assets/img/email-icon.png" alt="Logo Email" class="footerResponsive"
-    width="2.5%"    
-    height="2.5%"
-    />
-</footer>
+  <footer>
+    <div class="barraFooterSuperior">
+    Copyright© 2023 - Nathaniel Ibáñez
+    </div>
+    <div class="barraFooterInferior">
+      <a href="http://www.facebook.com">
+      <img src="../assets/img/facebook-icon.png" alt="Logo Facebook" class="footerResponsive"
+      width="2.5%"    
+      height="2.5%"
+      />
+  
+      <a href="http://www.twitter.com">
+      <img src="../assets/img/twitter-icon.png" alt="Logo Twitter" class="footerResponsive"
+      width="2.5%"    
+      height="2.5%"
+      />
+  
+      <a href="mailto:nathaniel@ibco.cl">
+      <img src="../assets/img/email-icon.png" alt="Logo Email" class="footerResponsive"
+      width="2.5%"    
+      height="2.5%"
+      />
+    </div>
+  </footer>
 
   <!-- Script bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>    

@@ -1,24 +1,40 @@
 header {
-  background-color: #4a958c;
+  background: rgb(12, 84, 76);
+  background: linear-gradient(270deg, rgb(12, 84, 76) 0%, rgb(12, 84, 76) 80%, rgb(22, 117, 72) 100%);
   border-bottom: black solid 10px;
 }
 header nav li {
   font-size: 1.5rem;
-  font-family: "Helvetica, sans-serif";
+  font-family: "Helvetica Neue, sans-serif";
   margin-top: 1%;
 }
 header .colFotoLogo {
   margin-left: 5%;
 }
 header .textoTitulo {
-  font-size: 2rem;
-  font-family: "Helvetica, sans-serif";
+  font-size: 2.5rem;
+  font-family: "Helvetica Neue, sans-serif";
   font-weight: bold;
+  color: white;
+}
+header .textoTitulo:hover {
+  color: #c6c6c6;
 }
 header .navbar {
-  background-color: #4a958c !important;
+  background-color: none;
   margin-left: 3%;
   align-items: center;
+  --bs-bg-opacity: 0;
+  padding-left: 5.3%;
+}
+header .collapse {
+  padding-left: 9%;
+}
+header .textonavbar {
+  color: white !important;
+}
+header .textonavbar:hover {
+  color: #c6c6c6 !important;
 }
 header .botonVerdeWhatsapp {
   background-color: #198754;
@@ -27,16 +43,35 @@ header .botonVerdeWhatsapp {
   margin-top: 1.5%;
   margin-bottom: 1.5%;
   margin-left: 8%;
+  padding-top: 0.58%;
   padding-left: 1%;
   padding-right: 1%;
   width: 20%;
+  font-family: "Helvetica Neue, sans-serif";
+}
+header .botonVerdeWhatsapp:hover {
+  background-color: #146f45;
+  border: solid black 3px;
 }
 header .logoWhatsapp {
-  vertical-align: -5%;
+  vertical-align: -11%;
+}
+
+/* Footer */
+.barraFooterSuperior {
+  background-color: rgb(25, 25, 25);
+  text-align: center;
+  color: white;
+  border-top: solid black 5px;
+}
+
+.barraFooterInferior {
+  background-color: black;
+  text-align: center;
 }
 
 main {
-  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  background-image: url("../assets/img/texturapapel.jpg");
 }
 main .carousel {
   margin-top: 3%;
@@ -60,7 +95,7 @@ main .textoCobertura {
   text-align: center;
   align-items: center;
   margin-top: 3%;
-  font-family: "Helvetica, sans-serif";
+  font-family: "Helvetica Neue, sans-serif";
   font-size: 3rem;
   font-weight: bold;
 }
@@ -69,7 +104,7 @@ main .textoSubCobertura {
   text-align: center;
   align-items: center;
   margin-top: 1.3%;
-  font-family: "Helvetica, sans-serif";
+  font-family: "Helvetica Neue, sans-serif";
   font-size: 2rem;
   font-weight: bold;
 }
@@ -87,17 +122,138 @@ main .textoSubCobertura {
     display: none;
   }
 }
-/* Footer */
-.barraFooterSuperior {
-  background-color: rgb(25, 25, 25);
-  text-align: center;
-  color: white;
-  border-top: solid black 5px;
+#mapEnPaginaCobertura {
+  height: 500px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4%;
 }
 
-.barraFooterInferior {
-  background-color: black;
+.cajaBlog {
+  padding-top: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+  border-radius: 0.3rem !important;
+  border: black solid 3px;
+}
+
+.ajusteCoberturaNosotros {
+  padding-bottom: 5%;
+}
+
+.textoParrafoNosotros {
   text-align: center;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.tablaNosotros {
+  align-items: center;
+}
+
+.textoEstudiosNosotros {
+  padding-left: 10%;
+}
+
+.tituloSuperiorBlog {
+  height: 22%;
+  text-align: center;
+  align-items: center;
+  font-family: "Helvetica Neue, sans-serif";
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.tituloBlog {
+  padding-top: 1%;
+  text-align: center;
+  padding-bottom: 1.5%;
+}
+
+.primerTextoCafeina {
+  padding-bottom: 2%;
+}
+
+.cajaBlog {
+  padding-top: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+  border-radius: 0.3rem !important;
+  border: black solid 3px;
+}
+
+.sobretituloYoutubeCafeina {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.primerTextoVacunas {
+  padding-bottom: 2.5%;
+}
+
+.ajusteListaVacunas {
+  padding-bottom: 2%;
+}
+
+.logoContacto {
+  align-items: center;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.tituloSuperiorContacto {
+  height: 22%;
+  text-align: center;
+  align-items: center;
+  font-family: "Helvetica Neue, sans-serif";
+  padding-top: 1%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.ajusteForm {
+  margin-left: 13%;
+  margin-right: 13%;
+  padding-top: 4%;
+  padding-bottom: 5%;
+}
+
+.ajusteContactar {
+  align-items: center;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.botonContactar {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 1%;
+  border-radius: 0.3rem !important;
+  font-size: 2rem;
+  background-color: #198754;
+  font-family: "Helvetica Neue, sans-serif";
+  font-weight: bold;
+  border: black solid 3px;
+  color: white;
+}
+
+.botonContactar:hover {
+  background-color: #146f45;
 }
 
 /*# sourceMappingURL=style.css.map */

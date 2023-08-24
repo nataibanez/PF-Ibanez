@@ -1,4 +1,13 @@
+// Módulos comunes
+
 @import "./modules/variables";
 @import "./modules/header";
-@import "./modules/main";
 @import "./modules/footer";
+
+// Módulos por página
+
+@import "./modules/main_index";
+@import "./modules/main_cobertura";
+@import "./modules/main_nosotros";
+@import "./modules/main_blog";
+@import "./modules/main_contacto";
