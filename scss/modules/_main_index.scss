@@ -28,6 +28,23 @@ main {
         margin-right: 1%;
     }
 
+    .card-img-top {
+        border-bottom: black solid 5px;
+    }
+
+    .card-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family: $font-main;
+        }
+
+    .card-text {
+        text-align: center;
+        font-size: 1.3rem;
+        padding-top: 5%;
+    }
+
     .textoCobertura {
         height: 22%;
         text-align: center;

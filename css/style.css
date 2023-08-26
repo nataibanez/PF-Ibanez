@@ -90,6 +90,20 @@ main .cardBlogIzquierda {
   margin-left: 2.2%;
   margin-right: 1%;
 }
+main .card-img-top {
+  border-bottom: black solid 5px;
+}
+main .card-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Helvetica Neue, sans-serif";
+}
+main .card-text {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-top: 5%;
+}
 main .textoCobertura {
   height: 22%;
   text-align: center;
