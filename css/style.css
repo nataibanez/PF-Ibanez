@@ -70,6 +70,10 @@ header .logoWhatsapp {
   text-align: center;
 }
 
+.textoSubCobertura {
+  margin-bottom: 100% !important;
+}
+
 main {
   background-image: url("../assets/img/texturapapel.jpg");
 }
@@ -104,7 +108,7 @@ main .card-text {
   font-size: 1.3rem;
   padding-top: 5%;
 }
-main .textoCobertura {
+main .textoIndexCobertura {
   height: 22%;
   text-align: center;
   align-items: center;
@@ -113,7 +117,7 @@ main .textoCobertura {
   font-size: 3rem;
   font-weight: bold;
 }
-main .textoSubCobertura {
+main .textoIndexSubCobertura {
   height: 10%;
   text-align: center;
   align-items: center;
@@ -144,17 +148,22 @@ main .textoSubCobertura {
   margin-bottom: 4%;
 }
 
-.cajaBlog {
-  padding-top: 1.5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  background-color: white;
-  border-radius: 0.3rem !important;
-  border: black solid 3px;
+.textoPrincipalCobertura {
+  text-align: center;
+  font-family: "Helvetica Neue, sans-serif";
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+
+.textoListaCoberturaComunas {
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-bottom: 3%;
+  font-weight: bold;
+  font-family: font-main;
 }
 
 .ajusteCoberturaNosotros {
@@ -169,10 +178,15 @@ main .textoSubCobertura {
 
 .tablaNosotros {
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
 }
 
 .textoEstudiosNosotros {
   padding-left: 10%;
+  font-size: 1.1rem;
+  width: 600px;
 }
 
 .tituloSuperiorBlog {

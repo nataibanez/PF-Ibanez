@@ -1,18 +1,4 @@
 
-
-.cajaBlog {
-    padding-top :1.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    background-color: white;
-    border-radius: .3rem !important;
-    border: black solid 3px;
-}
-
 .ajusteCoberturaNosotros {
     padding-bottom: 5%;
 }
@@ -25,8 +11,13 @@
 
 .tablaNosotros {
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto ;
 }
 
 .textoEstudiosNosotros {
     padding-left: 10%;
+    font-size: 1.10rem; 
+    width: 600px;
 }
