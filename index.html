@@ -20,6 +20,7 @@
   <link rel="shortcut icon" href="./assets/icons/favicon.ico"/>
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <header class="barraTop">
         <div class="container-fluid">
@@ -70,9 +71,9 @@
 
 <main>
     <!-- div de Carousel y blog -->
-    <div class="row g-0">
+    <div class="row g-0 contenedorCarousel">
       <!-- Carousel de promesas -->
-      <div id="carouselExampleAutoplaying" class="carousel slide col-9 col-md-7 classCarousel" data-bs-ride="carousel">
+      <div id="carouselExampleAutoplaying" class="carousel slide col-12 col-md-7 classCarousel" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -101,8 +102,8 @@
       
       <!-- Blog, aparece en pantalla grande y desaparece en las pequeñas -->
       
-        <div class="col-2 cardsBlog cardBlogIzquierda">
-          <div class="card cardsProperties">
+        <div class="col-2 cardsBlog cardBlogIzquierda ">
+          <div class="card cardsProperties blogHidingOnSmallScreen">
               <img src="./assets/img/Espresso.jpg" class="card-img-top" alt="Café espresso">
               <div class="card-body">
                   <h5 class="card-title">Cafeína</h5>
@@ -115,7 +116,7 @@
           </div>
         </div>
         <div class="col-2 cardsBlog">
-          <div class="card cardsProperties">
+          <div class="card cardsProperties blogHidingOnSmallScreen">
           <img src="./assets/img/vacunas.png" class="card-img-top" alt="Vacuna">
             <div class="card-body">
               <h5 class="card-title">Vacunas</h5>
@@ -190,14 +191,27 @@
 </div>
   <!-- Blog, aparece en pantallas pequeñas y desaparece en las pequeñas -->
 
-  <div class="col-4 ajusteCard blogHidingOnBigScreen smallBlogCardProperties">
+  <div class="row ajusteCard blogHidingOnBigScreen smallBlogCardProperties">
     <h2 class="tituloBlog">Blog</h2>
-      <div class="card">
+      
+      <div class="card cardBlogSmall cardBlogSmallCafeina col-6">
         <img src="./assets/img/Espresso.jpg" class="card-img-top" alt="Café espresso">
         <div class="card-body">
-          <h5 class="card-title">Cafeína</h5>
-          <p class="card-text">¿Qué es la cafeína? ¿Cuáles son sus efectos en la salud?</p>
-          <a href="./pages/blog.html" class="stretched-link"></a>
+            <h5 class="card-title">Cafeína</h5>
+              <class="card-text">
+                <p class="card-text">¿Qué es la cafeína?</p>
+                <p class="card-text" style="padding-top: 0%">¿Cuáles son sus efectos en la salud?</p>
+              </p>
+        <a href="./pages/blog.html#tituloBlogCafeina" class="stretched-link"></a>
+      </div>
+      </div>
+
+      <div class="card cardBlogSmall col-6">
+        <img src="./assets/img/vacunas.png" class="card-img-top" alt="Vacuna">
+        <div class="card-body">
+          <h5 class="card-title">Vacunas</h5>
+          <p class="card-text">Exploraremos los diferentes tipos de vacunas, desde las clásicas hasta las más innovadoras</p>
+          <a href="./pages/blog.html#tituloBlogVacunas" class="stretched-link"></a>
       </div>
       </div>
   </div>

@@ -1,11 +1,19 @@
-
-
 #mapEnPaginaCobertura {
     height: 500px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 4%;
+}
+
+.tituloSuperiorCobertura {
+    text-align: center;
+    align-items: center;
+    font-family: $font-main;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .textoPrincipalCobertura {
@@ -24,4 +32,24 @@
     padding-bottom: 3%;
     font-weight: bold;
     font-family: font-main;
+
+
+@media (max-width: 768px) {
+    
+    .tituloSuperiorCobertura {
+        margin-bottom: 0%;
+    }
+    
+    .footerResponsiveCobertura {
+        height: 8%;
+        width: 16%;
+    }
+
+    .scriptMapaPaginaCobertura {
+        margin-right: 5%;
+        margin-bottom: 10%;
+    }
+
+}
+
 }

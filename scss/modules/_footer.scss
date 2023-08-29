@@ -16,3 +16,14 @@
     margin-bottom: 100% !important;
 
 }
+
+@media (max-width: 768px) {
+    
+    .barraFooterSuperior {
+        font-size: 1.3rem;
+    }
+    .footerResponsive {
+        height: 8%;
+        width: 8%;
+    }
+}

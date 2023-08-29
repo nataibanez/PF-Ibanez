@@ -75,9 +75,47 @@ main {
     margin-bottom: 4%;
 }
 
-@media (min-width: 768px) {
+// Responsive
+
+@media (max-width: 768px) {
     
-    .blogHidingOnBigScreen {
+    .blogHidingOnSmallScreen {
         display:none;
+    }
+
+    .contenedorCarousel {
+        padding-left: 0%;
+        margin-right: 7%;
+    }
+
+    #map {
+        margin: 0;
+        width: 100vw;
+        margin-left: 5%;
+    }
+
+    .ajusteCard {
+        margin: 0%;
+        padding: 0%;
+    }
+ 
+    .cardBlogSmall {
+        margin-bottom: 5%;
+    }
+
+    .tituloBlog {
+        text-align: center;
+        margin-top: 5%;
+        font-family: $font-main;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+
+
+
+@media (min-width: 769px) {
+    .blogHidingOnBigScreen {
+        display: none;
     }
 }

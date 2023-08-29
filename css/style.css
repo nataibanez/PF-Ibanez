@@ -53,10 +53,32 @@ header .botonVerdeWhatsapp:hover {
   background-color: #146f45;
   border: solid black 3px;
 }
+header .botonVerdeWhatsapp:active {
+  background-color: #146f45;
+  border: solid black 3px;
+}
 header .logoWhatsapp {
   vertical-align: -11%;
 }
 
+@media (max-width: 767px) {
+  header nav ul li {
+    font-size: 2rem;
+  }
+  .botonVerdeWhatsapp {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 8vh;
+    font-size: 3.2rem !important;
+    padding-top: 1.5% !important;
+    padding-left: 0%;
+  }
+  .logoWhatsapp {
+    margin-left: 0%;
+    padding-left: 0%;
+    vertical-align: 3% !important;
+  }
+}
 /* Footer */
 .barraFooterSuperior {
   background-color: rgb(25, 25, 25);
@@ -74,6 +96,15 @@ header .logoWhatsapp {
   margin-bottom: 100% !important;
 }
 
+@media (max-width: 768px) {
+  .barraFooterSuperior {
+    font-size: 1.3rem;
+  }
+  .footerResponsive {
+    height: 8%;
+    width: 8%;
+  }
+}
 main {
   background-image: url("../assets/img/texturapapel.jpg");
 }
@@ -135,7 +166,35 @@ main .textoIndexSubCobertura {
   margin-bottom: 4%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .blogHidingOnSmallScreen {
+    display: none;
+  }
+  .contenedorCarousel {
+    padding-left: 0%;
+    margin-right: 7%;
+  }
+  #map {
+    margin: 0;
+    width: 100vw;
+    margin-left: 5%;
+  }
+  .ajusteCard {
+    margin: 0%;
+    padding: 0%;
+  }
+  .cardBlogSmall {
+    margin-bottom: 5%;
+  }
+  .tituloBlog {
+    text-align: center;
+    margin-top: 5%;
+    font-family: "Helvetica Neue, sans-serif";
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
+@media (min-width: 769px) {
   .blogHidingOnBigScreen {
     display: none;
   }
@@ -146,6 +205,16 @@ main .textoIndexSubCobertura {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4%;
+}
+
+.tituloSuperiorCobertura {
+  text-align: center;
+  align-items: center;
+  font-family: "Helvetica Neue, sans-serif";
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .textoPrincipalCobertura {
@@ -165,6 +234,19 @@ main .textoIndexSubCobertura {
   font-weight: bold;
   font-family: font-main;
 }
+@media (max-width: 768px) {
+  .textoListaCoberturaComunas .tituloSuperiorCobertura {
+    margin-bottom: 0%;
+  }
+  .textoListaCoberturaComunas .footerResponsiveCobertura {
+    height: 8%;
+    width: 16%;
+  }
+  .textoListaCoberturaComunas .scriptMapaPaginaCobertura {
+    margin-right: 5%;
+    margin-bottom: 10%;
+  }
+}
 
 .ajusteCoberturaNosotros {
   padding-bottom: 5%;
@@ -181,6 +263,10 @@ main .textoIndexSubCobertura {
   margin-left: auto;
   margin-right: auto;
   width: auto;
+}
+
+.fotoDoctor {
+  margin: 10%;
 }
 
 .textoEstudiosNosotros {

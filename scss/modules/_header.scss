@@ -67,11 +67,45 @@ header {
         background-color: #146f45;
         border: solid black 3px;
     }
-
-
-
+    
+    .botonVerdeWhatsapp:active {
+        background-color: #146f45;
+        border: solid black 3px;
+    }
 
     .logoWhatsapp {
         vertical-align: -11%;
+    }
+}
+
+// Responsive
+
+@media (max-width: 767px) {
+
+    header {
+        nav {
+            ul{
+                li {
+                    font-size: 2rem;
+                }
+
+            }
+        }
+    }
+    
+    .botonVerdeWhatsapp {
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 8vh;
+        font-size: 3.2rem !important;
+        padding-top: 1.5% !important;
+        padding-left: 0%;
+    }
+
+    .logoWhatsapp {
+        margin-left: 0%;
+        padding-left: 0%;
+        vertical-align: 3% !important;
+
     }
 }
