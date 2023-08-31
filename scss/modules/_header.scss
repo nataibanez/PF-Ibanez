@@ -30,7 +30,7 @@ header {
 
     .navbar {
         background-color: none;
-        margin-left: 3%;
+        margin-left: 0%;
         align-items: center;
         --bs-bg-opacity: 0;
         padding-left: 5.3%;
@@ -43,6 +43,7 @@ header {
 
     .textonavbar{
         color: $color-texto-header !important;
+        // font-size: 1.75rem;
     }
 
     .textonavbar:hover{
@@ -78,21 +79,35 @@ header {
     }
 }
 
+// Responsive: Fix para el logo con menu hamburguesa
+
+@media (max-width: 991px) {
+
+    .colFotoLogo {
+        width: 18%; 
+        height: 18%;
+        margin-left: 50%;
+        padding-top: 1.5%;
+    }
+}
+
+header {
+    nav {
+        ul{
+            li {
+                font-size: 1.75rem;
+            }
+
+        }
+    }
+}
+
+
 // Responsive
 
 @media (max-width: 767px) {
 
-    header {
-        nav {
-            ul{
-                li {
-                    font-size: 2rem;
-                }
 
-            }
-        }
-    }
-    
     .botonVerdeWhatsapp {
         margin-left: 10%;
         margin-right: 10%;

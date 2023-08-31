@@ -27,7 +27,11 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
-    background-color: white;
+
+    background-color: $box-color-main;
+    // Fallback de color de fondo
+    // background-color: white;
+
     border-radius: .3rem !important;
     border: black solid 3px;
 }
@@ -44,3 +48,35 @@
 .ajusteListaVacunas{
     padding-bottom: 2%;
 }
+
+.imgVacunas {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 2.5%;
+    padding-right: 1%;
+}
+
+// Responsive
+
+@media (max-width: 768px) {
+
+    .primerTextoCafeina {
+        font-size: 1.5rem;
+    }
+
+    .cajaBlog {
+        margin-bottom: 10% !important;
+    }
+
+    .textoVacunas {
+        font-size: 1.5rem;
+    }
+
+    .imgVacunas {
+        margin-left: 15%;
+        margin-bottom: 5%;
+    }
+
+
+}
+

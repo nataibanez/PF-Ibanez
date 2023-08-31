@@ -1,10 +1,17 @@
+// Fuente Helvetica
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
 // Paleta de colores
 
 $color-main: #5fc1b7;
 $color-secondary: #0e645a;
 
-$bg-color-main: PEND;
-$bg-color-secondary: PEND;
+
+// Color semiransparente de las cajas de fondo
+$box-color-main: rgba(255, 255, 255, 0.75);
+
+// Fallback de blanco sin semitransparencia
+$bg-color-secondary: rgba(255, 255, 255);
 
 // Texto 
 

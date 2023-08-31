@@ -70,16 +70,17 @@
         </a>
 </header>
 
-<main>
+<main id="">
 <!-- Imagen de contacto -->
   
-  <div class="logoContacto">
-    <img src="../assets/img/contacto.webp" alt="Telefono"
+  <div class="contenedorLogoContacto">
+    <img src="../assets/img/contacto.webp" alt="Telefono" class="logoContacto center"
     width="7.5%"    
     height="7.5%"
     />
   </div>
-<!-- Texto título de Blog -->
+
+<!-- Texto título de Contacto  -->
 
   <h2 class="tituloSuperiorContacto">Contacto</h2>
   <p class="textoIndexSubCobertura">Si quieres solicitar una consulta médica a domicilio, sugerimos usar el botón WhatsApp</p>
@@ -95,7 +96,7 @@
 <!-- Lista de servicios disponibles  --> 
     <div>
         Servicio solicitado: 
-        <select class="form-select form-select mb-3" aria-label="select example" name="" id="prestacion" required>
+        <select class="form-select mb-3 formFieldText" aria-label="select example" name="" id="prestacion" required>
             <option value="Medicina">Consulta de medicina general</option>
             <option value="Cronicas">Consulta de enfermedades crónicas</option>
             <option value="Certificados">Certificados médicos</option>
@@ -114,7 +115,7 @@
         <label for="email" class="form-label">Correo electrónico (opcional):</label>
         <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com"/>
     </div>
-    <div class="form-check ajusteMarginForm">
+    <div class="form-check ajusteRadioForm">
         ¿Desea ser contactado/a por vía telefónica?   
         <div>
           <label for="contactable" class="form-check-label">Sí</label>
@@ -124,8 +125,8 @@
         </div>
     </div>
     <div class="input-group">
-      <span class="input-group-text">Comentarios</span>
-      <textarea class="form-control" aria-label="With textarea"></textarea>
+      <span class="input-group-text textoComentarios">Comentarios</span>
+      <textarea class="form-control" id="textAreaComentarios" aria-label="With textarea"></textarea>
     </div>
     <div class="ajusteContactar">
         <input class="botonContactar" type="submit" value="Contactar"/> 
