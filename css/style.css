@@ -10,7 +10,9 @@ header nav li {
   margin-top: 1%;
 }
 header .colFotoLogo {
-  margin-left: 5%;
+  height: 9%;
+  width: 9%;
+  margin-left: 1%;
 }
 header .textoTitulo {
   font-size: 2.5rem;
@@ -26,7 +28,7 @@ header .navbar {
   margin-left: 0%;
   align-items: center;
   --bs-bg-opacity: 0;
-  padding-left: 5.3%;
+  padding-left: 1%;
 }
 header .collapse {
   padding-left: 9%;
@@ -43,7 +45,7 @@ header .botonVerdeWhatsapp {
   font-size: 2rem;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
-  margin-left: 8%;
+  margin-left: 15%;
   padding-top: 0.58%;
   padding-left: 1%;
   padding-right: 1%;
@@ -62,31 +64,123 @@ header .logoWhatsapp {
   vertical-align: -11%;
 }
 
-@media (max-width: 991px) {
-  .colFotoLogo {
-    width: 18%;
-    height: 18%;
-    margin-left: 50%;
-    padding-top: 1.5%;
-  }
-}
 header nav ul li {
-  font-size: 1.75rem;
+  font-size: 1.4rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 467px) {
+  .colFotoLogo {
+    width: 30%;
+    height: 30%;
+    padding-top: 1.5%;
+  }
+  .botonVerdeWhatsapp {
+    font-size: 2rem;
+    margin-right: 6%;
+  }
+  .textoTitulo {
+    margin-left: 1% !important;
+    font-size: 1.6rem !important;
+    font-family: "Helvetica Neue, sans-serif";
+    font-weight: bold;
+    color: white;
+  }
+}
+@media (min-width: 468px) and (max-width: 767px) {
+  #colFotoLogo {
+    width: 18%;
+    height: 18%;
+    padding-top: 1.5%;
+  }
   .botonVerdeWhatsapp {
     margin-left: 10%;
     margin-right: 10%;
-    height: 8vh;
-    font-size: 3.2rem !important;
-    padding-top: 1.5% !important;
+    height: 11vh;
+    font-size: 2.5rem !important;
     padding-left: 0%;
   }
   .logoWhatsapp {
     margin-left: 0%;
     padding-left: 0%;
     vertical-align: 3% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .colFotoLogo {
+    width: 18%;
+    height: 18%;
+    margin-left: 50%;
+    padding-top: 1.5%;
+  }
+  #botonVerdeWhatsapp {
+    width: 50%;
+    font-size: 3rem;
+    margin-right: 10%;
+  }
+  .logoWhatsapp {
+    margin-left: 0%;
+    padding-left: 0%;
+    vertical-align: 0% !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #colFotoLogo {
+    margin-left: 1%;
+    width: 15%;
+    height: 25%;
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+  }
+  #textoTitulo {
+    margin-left: 1%;
+    font-size: 2rem;
+    font-family: "Helvetica Neue, sans-serif";
+    font-weight: bold;
+    color: white;
+  }
+  #botonVerdeWhatsapp {
+    margin-left: 2.5%;
+    margin-right: 4%;
+    margin-top: 5%;
+    height: 8.5vh;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  header nav ul li {
+    font-size: 1.25rem !important;
+  }
+  .navbar {
+    background-color: none;
+    margin-left: 0%;
+    align-items: start;
+    --bs-bg-opacity: 0;
+    padding-left: 0%;
+  }
+  #colFotoLogo {
+    margin-left: 1%;
+    width: 10%;
+    height: 10%;
+    padding-top: 1.5%;
+    padding-bottom: 0.8%;
+  }
+  #textoTitulo {
+    margin-left: 1%;
+    font-size: 2rem;
+    padding-left: 0%;
+  }
+  #botonVerdeWhatsapp {
+    width: 20vw;
+    height: 8vh;
+    margin-left: 16%;
+    margin-top: 2.5%;
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+  .logoWhatsapp {
+    margin-left: 0%;
+    padding-left: 0%;
+    vertical-align: -30% !important;
   }
 }
 /* Footer */
@@ -363,6 +457,7 @@ main .textoIndexSubCobertura {
   .imgVacunas {
     margin-left: 15%;
     margin-bottom: 5%;
+    border: solid black 3px;
   }
 }
 .contenedorLogoContacto {
