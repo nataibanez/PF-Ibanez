@@ -5,6 +5,7 @@
     text-align: center;
     color: white;
     border-top: solid black 5px;
+    font-family: $font-main;
     }
 
 .barraFooterInferior {
@@ -25,5 +26,16 @@
     .footerResponsive {
         height: 8%;
         width: 8%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+
+    .barraFooterSuperior {
+        font-size: 1.2rem;
+    }
+    .footerResponsive {
+        height: 5%;
+        width: 5%;
     }
 }

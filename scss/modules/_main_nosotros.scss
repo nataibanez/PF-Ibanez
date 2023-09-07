@@ -41,6 +41,22 @@
 
     .ajusteCoberturaNosotros {
         font-size: 1.5rem;
-    }   
-}
+    }
+    
+    .textoParrafoNosotros {
+        text-align: center;
+        align-items: center;
+        font-size: $content-mobile-fontsize;
+        padding: 4%;  
+    }
 
+    #cajaBlog {
+        padding: 0%;
+    }
+
+    .textoEstudiosNosotros {
+        font-size: $content-mobile-fontsize;    
+    }
+
+
+}

@@ -60,24 +60,37 @@
 
 @media (max-width: 768px) {
 
-    .primerTextoCafeina {
-        font-size: 1.5rem;
-    }
-
     .cajaBlog {
         margin-bottom: 10% !important;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .tituloBlog {
+        font-size: $title-mobile-fontsize;
+    }
+
+    .primerTextoCafeina {
+        font-size: $content-mobile-fontsize;
     }
 
     .textoVacunas {
-        font-size: 1.5rem;
+        font-size: $content-mobile-fontsize;
     }
 
     .imgVacunas {
         margin-left: 15%;
         margin-bottom: 5%;
-        border: solid black 3px;
     }
-
 
 }
 
+@media (min-width: 769px) and (max-width: 991px) {
+
+    .imgVacunas {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+
+    }
+}

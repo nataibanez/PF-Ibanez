@@ -55,7 +55,6 @@
 
 @media (max-width: 768px) {
 
-
 .logoContacto {
     width: 28%;   
     height: 28%;
@@ -63,18 +62,23 @@
     margin-right: auto;
 }
 
+// el textoIndiceSubCobertura se usa en main_index.scss
+
 .ajusteForm {
-    margin: 5%;
-    font-size: 1.75rem;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-bottom: 8%;
+    font-size: $contact-form-fontsize;
 }
 
 .form-control {
-    font-size: 1.75rem;
+    font-size: $contact-form-fontsize;
     margin-bottom: 6%;
 }
 
 #prestacion {
-    font-size: 1.75rem;
+    font-size: $contact-form-fontsize;
     // Utilicé !important porque en _utilities.scss .mb-3 tenía un margin-bottom 1em como !important, no dejandome cambiar el CSS
     margin-bottom: 6% !important;
 }
@@ -93,7 +97,7 @@ input[type=radio] {
 }
 
 .textoComentarios {
-    font-size: 2rem;
+    font-size: $contact-form-fontsize;
 }
 
 #textAreaComentarios {
@@ -109,4 +113,20 @@ input[type=radio] {
     padding-right: 9%;
 }
 
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    
+    .logoContacto {
+        width: 17%;   
+        height: 17%;
+    }
+
+    .botonContactar {
+        margin-top: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 9%;
+        padding-right: 9%;
+    }
 }

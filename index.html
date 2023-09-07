@@ -24,7 +24,7 @@
 <body>
   <header class="barraTop">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row g-0">
         <!-- Logo del menu principal -->
           <div class="colFotoLogo col-2 col-md-1" id="colFotoLogo">
               <img src="./assets/img/MedievalMedic.webp" alt="Logo Médicos a la antigua" class="logoImagen"
@@ -33,7 +33,7 @@
               />
           </div>
         <!-- Navbar del menu principal -->
-          <nav class="navbar navbar-expand-xl bg-body-tertiary col-6">
+          <nav class="navbar navbar-dark navbar-expand-xl bg-body-tertiary col-6">
             <div class="container-fluid">
               <a class="textoTitulo navbar-brand" id="textoTitulo" href="./index.html">Médicos a la antigua</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,9 +71,9 @@
 
 <main>
     <!-- div de Carousel y blog -->
-    <div class="row g-0 contenedorCarousel">
+    <div class="row g-0">
       <!-- Carousel de promesas -->
-      <div id="carouselExampleAutoplaying" class="carousel slide col-12 col-md-7 classCarousel" data-bs-ride="carousel">
+      <div id="carouselExampleAutoplaying" class="contenedorCarousel carousel slide col-12 col-lg -7 classCarousel" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -130,12 +130,14 @@
 
     <div>
       <h2 class="textoIndexCobertura">Conoce nuestra cobertura</h2>
+    </div>
+    <div>
       <p class="textoIndexSubCobertura">Si tienes dudas, te respondemos de inmediato</p>
     </div>
     
 <!-- Mapa de cobertura, contiene código de API -->
 
-<div class="row">
+<div class="row g-0">
 <div id="map" id="containerForAll" class="scriptMapaCobertura"></div>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bM6Kn2A7aAFsYA7VyBC1j3Ju6nolfEk&callback=initMap&v=weekly"
@@ -176,11 +178,11 @@
       // Construct the polygon.
       const areaAtencion = new google.maps.Polygon({
         paths: triangleCoords,
-        strokeColor: "#FF0000",
+        strokeColor: "#00b7d2",
         strokeOpacity: 0.8,
         strokeWeight: 2,
-        fillColor: "#FF0000",
-        fillOpacity: 0.35,
+        fillColor: "#b8eaeb",
+        fillOpacity: 0.5,
       });
 
       areaAtencion.setMap(map);
@@ -189,24 +191,24 @@
     window.initMap = initMap;
   </script>
 </div>
-  <!-- Blog, aparece en pantallas pequeñas y desaparece en las grandes -->
+  <!-- Blog, aparece en pantallas pequeñas (mobile, tablet) y desaparece en las grandes -->
 
   <div class="row ajusteCard blogHidingOnBigScreen smallBlogCardProperties">
     <h2 class="tituloBlog">Blog</h2>
       
-      <div class="card cardBlogSmall cardBlogSmallCafeina col-6">
+      <div class="card cardBlogSmall cardBlogSmallCafeina col-5 col-md-4 g-0">
         <img src="./assets/img/Espresso.webp" class="card-img-top" alt="Café espresso">
         <div class="card-body">
             <h5 class="card-title">Cafeína</h5>
-              <class="card-text">
+
                 <p class="card-text">¿Qué es la cafeína?</p>
-                <p class="card-text" style="padding-top: 0%">¿Cuáles son sus efectos en la salud?</p>
+                <p class="card-text">¿Cuáles son sus efectos en la salud?</p>
               </p>
         <a href="./pages/blog.html#tituloBlogCafeina" class="stretched-link"></a>
       </div>
       </div>
 
-      <div class="card cardBlogSmall col-6">
+      <div class="card cardBlogSmall col-5 col-md-4 g-0">
         <img src="./assets/img/vacunas.webp" class="card-img-top" alt="Vacuna">
         <div class="card-body">
           <h5 class="card-title">Vacunas</h5>

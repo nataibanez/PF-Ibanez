@@ -1,8 +1,7 @@
 main {
     
-    // vestigio-alternativa: esta es la gradiente original del v2
-    // background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
-    
+
+
     background-image: url('../assets/img/texturapapel.webp');
 
     .carousel {
@@ -15,12 +14,16 @@ main {
         border-radius: .3rem !important;
     }
 
+    .tituloBlog {
+        font-family: $font-main;
+    }
+
     .cardsBlog {
         margin-top: 3%;
     }
 
     .cardsProperties {
-        height: 100%;
+        height: 98%;
     }
 
     .cardBlogIzquierda {
@@ -75,7 +78,7 @@ main {
     margin-bottom: 4%;
 }
 
-// Responsive
+// Responsive mobile
 
 
 @media (max-width: 768px) {
@@ -86,15 +89,21 @@ main {
 
 
     .contenedorCarousel {
+        padding-top: 2%;
         padding-left: 0%;
-        margin-right: 7%;
+        padding-right: 6%;
+    }
+
+
+    .textoIndexCobertura {
+        padding-left: 2%;
     }
 
     #map {
-        width: 100vw;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+        padding-right: 75%;
+        padding-left: 20%;
+        height: 350px;
+    }        
 
     .ajusteCard {
         margin-left: 3%;
@@ -103,20 +112,64 @@ main {
  
     .cardBlogSmall {
         margin-bottom: 5%;
+        margin-right: 5%;
+        margin-left: 2%;
     }
 
     .tituloBlog {
-        text-align: center;
-        margin-top: 5%;
+        margin-top: 2%;
         font-family: $font-main;
         font-size: 3rem;
         font-weight: bold;
+        width: 95%;
+    }
+
+    .textoIndexSubCobertura {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
+@media (min-width: 769px) and (max-width: 991px) {
+
+    .contenedorCarousel {
+        padding-top: 1%;
+        padding-right: 6%;
+    }
+    
+    #map {
+        height: 350px;
+    } 
+
+    .tituloBlog {
+        margin-top: 2%;
+        margin-right: 2.3%;
+        margin-bottom: 5%;
+        font-size: 3rem;
+        font-weight: bold;
+        width: 95%;
+    }
+
+    .blogHidingOnSmallScreen {
+    display:none;
+    }
+
+    .ajusteCard {
+        margin-left: 1.7%;
+        padding: 0%;
+        justify-content: space-evenly;
+    }
+ 
+    .cardBlogSmall {
+        margin-bottom: 5%;
+        margin-right: 5%;
+        margin-left: 2%;
+    }
 
 
-@media (min-width: 769px) {
+}
+
+@media (min-width: 991px) {
     .blogHidingOnBigScreen {
         display: none;
     }

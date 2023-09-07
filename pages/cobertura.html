@@ -22,7 +22,7 @@
 <body>
   <header class="barraTop">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row g-0">
         <!-- Logo del menu principal -->
           <div class="colFotoLogo col-2 col-md-1" id="colFotoLogo">
               <img src="../assets/img/MedievalMedic.webp" alt="Logo Médicos a la antigua" class="logoImagen"
@@ -70,11 +70,11 @@
   <main>
     <div>
       <h2 class="tituloSuperiorCobertura">Cobertura</h2>
-      <div class="row g-0 cajaCobertura">
+      <div class="row g-0">
         
          <!-- Mapa de cobertura, modificado desde el del index, con clase propia "scriptMapaPag  inaCobertura" en su módulo. contiene código de API -->
 
-        <div class="row">
+        <div class="row g-0">
           <div id="map" id="containerForAll" class="scriptMapaPaginaCobertura"></div>
             <script
               src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bM6Kn2A7aAFsYA7VyBC1j3Ju6nolfEk&callback=initMap&v=weekly"
@@ -115,10 +115,10 @@
                 // Construct the polygon.
                 const areaAtencion = new google.maps.Polygon({
                   paths: triangleCoords,
-                  strokeColor: "#FF0000",
+                  strokeColor: "#00b7d2",
                   strokeOpacity: 0.8,
                   strokeWeight: 2,
-                  fillColor: "#FF0000",
+                  fillColor: "#b8eaeb",
                   fillOpacity: 0.35,
                 });
           
@@ -128,23 +128,116 @@
               window.initMap = initMap;
             </script>
           </div>
+
+        <div>
+          <h2 class="tituloSuperiorCobertura">Precios según comuna</h2>
         </div>
 
-        <div class="contenedorCobertura">
+        <div class="contenedorCobertura cajaCobertura">
           <h2 class="textoPrincipalCobertura">
-          La cobertura de Médicos a la antigua incluye a las comunas de
+            La cobertura de Médicos a la antigua incluye a las comunas:
           </h2>
-            <ul class="textoListaCoberturaComunas">
-              <li>Providencia</li>
-              <li>Ñuñoa</li>
-              <li>La Reina</li>
-              <li>Las Condes</li>
-              <li>Vitacura</li>
-              <li>Lo barnechea</li>
-            </ul>
+
+          <!-- Accordion con comunas -->
+          
+          <div class="accordion" id="accordionCobertura">
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  📍 Providencia
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div>El costo por consulta es de <strong>$60.000</strong></div>
+                  <div>El tiempo de espera estimado de <strong>30-60 minutos*</strong>, desde el contacto por el médico asignado a su caso</div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  📍 Ñuñoa
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div>El costo por consulta es de <strong>$60.000</strong></div>
+                  <div>El tiempo de espera estimado de <strong>30-60 minutos*</strong>, desde el contacto por el médico asignado a su caso</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  📍 La Reina
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div>En La Reina occidente (hasta Av. Las Perdices) el costo por consulta es de <strong>$60.000</strong>, con un tiempo de espera estimado de <strong>30-60 minutos*</strong>, desde el contacto por el médico asignado a su caso
+
+                  <div>En La Reina alto (Av. Las Perdices hacia el oriente) el costo por consulta es de <strong>$70.000</strong>, con un tiempo de espera estimado de <strong>45-75 minutos*</strong>, desde el contacto por el médico asignado a su caso</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  📍 Las Condes
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div>En Las Condes, desde el occidente hasta Av. Estoril, el costo por consulta es de <strong>$60.000</strong>, con un tiempo de espera estimado de <strong>30-60 minutos*</strong>, desde el contacto por el médico asignado a su caso
+
+                  <div>Dede Av. Estoril hacia el oriente el costo por consulta es de <strong>$70.000</strong>, con un tiempo de espera estimado de <strong>45-75 minutos*</strong>, desde el contacto por el médico asignado a su caso</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  📍 Vitacura
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div>El costo por consulta es de <strong>$60.000</strong></div>
+                  <div>El tiempo de espera estimado de <strong>30-60 minutos*</strong>, desde el contacto por el médico asignado a su caso</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive">
+                  📍 Lo Barnechea
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div>En la mayoría de la comuna, incluyendo Los Trapenses, el costo por consulta es de <strong>$85.000</strong>, con un tiempo de espera estimado de <strong>50-80 minutos*</strong>, desde el contacto por el médico asignado a su caso
+
+                  <div>En pie de cerro, el costo por consulta es de <strong>$95.000</strong>, con un tiempo de espera estimado de <strong>60-90 minutos*</strong>, desde el contacto por el médico asignado a su caso</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+            
+          <div class="arteriscoCobertura">
+            <i>*El tiempo estimado es una aproximación y no constituye una garantía, debido a que factores externos pueden influir en el tiempo total de espera </i>
+          </div>
         </div>
 
-      </div>
     </div>
     
   </main>
@@ -153,27 +246,27 @@
 
   <footer>
     <div class="barraFooterSuperior">
-    Copyright© 2023 - Nathaniel Ibáñez
-    </div>
-    <div class="barraFooterInferior">
-      <a href="http://www.facebook.com">
-      <img src="../assets/img/facebook-icon.webp" alt="Logo Facebook" class="footerResponsiveCobertura"
-      width="2.5%"    
-      height="5%"
-      />
-  
-      <a href="http://www.twitter.com">
-      <img src="../assets/img/twitter-icon.webp" alt="Logo Twitter" class="footerResponsiveCobertura"
-      width="2.5%"    
-      height="5%"
-      />
-  
-      <a href="mailto:nathaniel@ibco.cl">
-      <img src="../assets/img/email-icon.webp" alt="Logo Email" class="footerResponsiveCobertura"
-      width="2.5%"    
-      height="5%"
-      />
-    </div>
+      Copyright© 2023 - Nathaniel Ibáñez
+      </div>
+      <div class="barraFooterInferior">
+        <a href="http://www.facebook.com">
+        <img src="../assets/img/facebook-icon.webp" alt="Logo Facebook" class="footerResponsive"
+        width="2.5%"    
+        height="5%"
+        />
+    
+        <a href="http://www.twitter.com">
+        <img src="../assets/img/twitter-icon.webp" alt="Logo Twitter" class="footerResponsive"
+        width="2.5%"    
+        height="5%"
+        />
+    
+        <a href="mailto:nathaniel@ibco.cl">
+        <img src="../assets/img/email-icon.webp" alt="Logo Email" class="footerResponsive"
+        width="2.5%"    
+        height="5%"
+        />
+      </div>
   </footer>
 
   <!-- Script bootstrap -->
