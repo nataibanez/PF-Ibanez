@@ -21,7 +21,6 @@
 }
 
 .textoEstudiosNosotros {
-    padding-left: 10%;
     font-size: 1.10rem; 
     width: 600px;
 }
@@ -30,13 +29,15 @@
 
 @media (max-width: 768px) {
 
-    .cajaBlog {
-        margin: 0px !important;
-        
+    .fotoDoctor {
+        margin-left: 28%;
+        margin-bottom: 5%;
     }
 
     .textoEstudiosNosotros {
-        font-size: 1.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 10%;
     }
 
     .ajusteCoberturaNosotros {
@@ -52,11 +53,32 @@
 
     #cajaBlog {
         padding: 0%;
+        margin: 0%;
     }
 
     .textoEstudiosNosotros {
         font-size: $content-mobile-fontsize;    
     }
 
+
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+
+    .fotoDoctor {
+        margin-left: 0%;
+        margin-bottom: 5%;
+    }
+    
+    #cajaBlog {
+        padding: 2%;
+        margin: 2%;
+    }
+    
+    .textoEstudiosNosotros {
+        font-size: 1 rem;
+        width: 400px;
+        margin-left: 20%;
+    }
 
 }

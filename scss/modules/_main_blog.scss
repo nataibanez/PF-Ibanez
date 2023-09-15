@@ -27,7 +27,6 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
-
     background-color: $box-color-main;
     // Fallback de color de fondo
     // background-color: white;
@@ -42,7 +41,7 @@
 }
 
 .primerTextoVacunas {
-    padding-bottom: 2.5%;
+    padding-bottom: 4%;
 }
 
 .ajusteListaVacunas{
@@ -50,10 +49,12 @@
 }
 
 .imgVacunas {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    padding-left: 2.5%;
-    padding-right: 1%;
+    width: 100%;
+    height: 100%;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 // Responsive
@@ -61,7 +62,6 @@
 @media (max-width: 768px) {
 
     .cajaBlog {
-        margin-bottom: 10% !important;
         padding-left: 8%;
         padding-right: 8%;
     }
@@ -79,7 +79,7 @@
     }
 
     .imgVacunas {
-        margin-left: 15%;
+        margin-left: 25%;
         margin-bottom: 5%;
     }
 
@@ -87,9 +87,24 @@
 
 @media (min-width: 769px) and (max-width: 991px) {
 
+    .cajaBlog {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .primerTextoCafeina {
+        font-size: $content-mobile-fontsize;
+    }
+
+    .textoVacunas {
+        font-size: $content-mobile-fontsize;
+
+    }
+
     .imgVacunas {
-        margin-left: auto;
+        margin-left: 25%;
         margin-right: auto;
+        margin-top: 5%;
         margin-bottom: 2%;
 
     }

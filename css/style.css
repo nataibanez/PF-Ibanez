@@ -101,7 +101,7 @@ header nav ul li {
   .botonVerdeWhatsapp {
     margin-left: 79px;
     margin-right: 79px;
-    height: 11vh;
+    height: 7vh;
     font-size: 2.5rem !important;
     padding-left: 0%;
   }
@@ -197,6 +197,7 @@ header nav ul li {
   color: white;
   border-top: solid black 5px;
   font-family: "Helvetica Neue, sans-serif";
+  margin-bottom: 0rem;
 }
 
 .barraFooterInferior {
@@ -460,17 +461,19 @@ main .textoIndexSubCobertura {
 }
 
 .textoEstudiosNosotros {
-  padding-left: 10%;
   font-size: 1.1rem;
   width: 600px;
 }
 
 @media (max-width: 768px) {
-  .cajaBlog {
-    margin: 0px !important;
+  .fotoDoctor {
+    margin-left: 28%;
+    margin-bottom: 5%;
   }
   .textoEstudiosNosotros {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10%;
   }
   .ajusteCoberturaNosotros {
     font-size: 1.5rem;
@@ -483,9 +486,25 @@ main .textoIndexSubCobertura {
   }
   #cajaBlog {
     padding: 0%;
+    margin: 0%;
   }
   .textoEstudiosNosotros {
     font-size: 1.2rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .fotoDoctor {
+    margin-left: 0%;
+    margin-bottom: 5%;
+  }
+  #cajaBlog {
+    padding: 2%;
+    margin: 2%;
+  }
+  .textoEstudiosNosotros {
+    font-size: 1 rem;
+    width: 400px;
+    margin-left: 20%;
   }
 }
 .tituloSuperiorBlog {
@@ -528,7 +547,7 @@ main .textoIndexSubCobertura {
 }
 
 .primerTextoVacunas {
-  padding-bottom: 2.5%;
+  padding-bottom: 4%;
 }
 
 .ajusteListaVacunas {
@@ -536,15 +555,16 @@ main .textoIndexSubCobertura {
 }
 
 .imgVacunas {
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  padding-left: 2.5%;
-  padding-right: 1%;
+  width: 100%;
+  height: 100%;
+  padding-top: 0%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 @media (max-width: 768px) {
   .cajaBlog {
-    margin-bottom: 10% !important;
     padding-left: 8%;
     padding-right: 8%;
   }
@@ -558,14 +578,25 @@ main .textoIndexSubCobertura {
     font-size: 1.2rem;
   }
   .imgVacunas {
-    margin-left: 15%;
+    margin-left: 25%;
     margin-bottom: 5%;
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {
+  .cajaBlog {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .primerTextoCafeina {
+    font-size: 1.2rem;
+  }
+  .textoVacunas {
+    font-size: 1.2rem;
+  }
   .imgVacunas {
-    margin-left: auto;
+    margin-left: 25%;
     margin-right: auto;
+    margin-top: 5%;
     margin-bottom: 2%;
   }
 }
