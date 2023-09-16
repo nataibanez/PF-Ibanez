@@ -32,13 +32,13 @@
     padding-top:2%
 }
 
-.botonContactar {
+#botonContactar {
     padding-left:5%;
     padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
     margin-top: 1%;
-    border-radius: .3rem !important;    
+    border-radius: .3rem;    
     font-size: 2rem;
     background-color: #198754;
     font-family: $font-main;
@@ -79,8 +79,11 @@
 
 #prestacion {
     font-size: $contact-form-fontsize;
-    // Utilicé !important porque en _utilities.scss .mb-3 tenía un margin-bottom 1em como !important, no dejandome cambiar el CSS
-    margin-bottom: 6% !important;
+    margin-bottom: 6%;
+}
+
+#ajusteTopForm {
+    margin-top: 6%;
 }
 
 
