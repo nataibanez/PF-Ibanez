@@ -6,17 +6,17 @@
     margin-bottom: 4%;
 }
 
-.cajaCobertura {
+#cajaCobertura {
     width: 80%;
     padding-top :1.5%;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
-    margin-left: 10%    ;
+    margin-left: 10%;
     margin-right: 15%;
     margin-bottom: 5%;
     background-color: $box-color-main;
-    border-radius: .3rem !important;
+    border-radius: .3rem;
     border: black solid 3px;
 }
 
